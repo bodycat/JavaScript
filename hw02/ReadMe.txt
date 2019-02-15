@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=tJ7JcweIOZ4
 
 Строки
 https://learn.javascript.ru/string
+https://asciitable.com
 
 Строки создаются при помощи двойных или одинарных кавычек:
 var text = "моя строка";

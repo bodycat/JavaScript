@@ -1,3 +1,11 @@
+HW01
+Standart
+1-3
+https://codepen.io/khizri-tataev/pen/KJGQbX
+https://codepen.io/khizri-tataev/pen/GzYxqj
+Addition 4-5
+https://codepen.io/khizri-tataev/pen/rPqdKg
+
 Useful links:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://github.com/bodycat/javascript-tutorial-ru

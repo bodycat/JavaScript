@@ -1,3 +1,7 @@
+Оформление JS Style
+https://learn.javascript.ru/coding-style
+https://www.youtube.com/watch?v=tJ7JcweIOZ4
+
 Строки
 https://learn.javascript.ru/string
 

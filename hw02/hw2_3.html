@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_#3</title>
+</head>
+<body>
+<span id="res">Итог:</span>
+<br>
+<input type="text" name="firstNumber" id="firstNumber" placeholder="12">
+<input type="text" name="secondNumber" id="secondNumber" placeholder="52">
+<button onclick="inputNumbers()">Ввести произвольные числа</button>
+	<script>
+
+// 	3.	Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем написать скрипт, который работает по следующему принципу:
+// o	если a и b положительные, вывести их разность;
+// o	если а и b отрицательные, вывести их произведение;
+// o	если а и b разных знаков, вывести их сумму;
+// ноль можно считать положительным числом.
+
+		var a = 10;
+		var b = 22;
+		var result;
+		var res = document.getElementById( "res" );
+
+if ( a !== NaN && a >= 0 && b !==NaN && b >= 0 ) {
+	if ( a > b ) {
+		result = a - b;
+	} else {
+		result = b - a;
+	}
+} else if ( a !== NaN && a < 0 && b!==NaN && b < 0 ) {
+
+		result = a * b;
+} else if ( ( a !== NaN && a < 0 && b !== NaN && b >= 0 ) || ( a !== NaN && a >= 0 && b !== NaN && b < 0 ) ) {
+		result = a + b;
+}
+res.innerHTML = "Итог: " + result;
+
+function inputNumbers() {
+	var a = +document.getElementById( "firstNumber" ).value;
+	var b = +document.getElementById( "secondNumber" ).value;
+	var result;
+	var res = document.getElementById( "res" )
+
+if ( a !== NaN && a >= 0 && b !== NaN && b >= 0 ) {
+	if ( a > b ) {
+		result = a - b;
+	} else {
+		result = b - a;
+	}
+} else if ( a !== NaN && a < 0 && b !==NaN && b < 0 ) {
+
+		result = a * b;
+} else if ( ( a !== NaN && a < 0 && b !== NaN && b >= 0 ) || ( a !== NaN && a >= 0 && b !== NaN && b < 0 ) ) {
+		result = a + b;
+}
+console.log(typeof a);
+res.innerHTML = "Итог: " + result;
+}
+	</script>
+</body>
+</html>

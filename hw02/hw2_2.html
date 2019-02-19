@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic JavaScript hw02_2</title>
+</head>
+<body>
+	<h2>Чему будет равен x в примере ниже?</h2>
+	<pre>
+		var a = 2;
+		var x = 1 + (a *= 2);
+	</pre>
+	<script type="text/javascript">
+		var a = 2;
+		var x = 1 + (a *= 2);		
+		alert("Выполняем операии: x = "+x+" Итого: a=5");	
+	</script>
+	<pre>
+		выполняется оператор *=, в результате работы которого переменная a принимает значение 5
+		выполняется конкатенация операнда 1 и операнда ()
+		выполнятся оператор присваивания, в результате работы которого переменная x принимает значение 5
+	</pre>	
+<!-- https://codepen.io/khizri-tataev/pen/rPPbMQ	 -->
+</body>
+</html>

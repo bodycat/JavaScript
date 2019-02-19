@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_#5</title>
+	<style>
+		input {
+			width: 70px;
+			border-radius: 3px;
+			text-align: center;
+			vertical-align: center;
+		}
+		input:focus {
+			color: #001281;
+			border: 2px solid #D87A00;
+			border-radius: 3px;
+			outline: none;
+			vertical-align: center;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+
+<!-- 5.	Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. -->
+
+	<input type="number" name="first_number" id="first_number" placeholder="-23">
+	<input type="number" name="second_number" id="second_number" placeholder="87">
+	<button onclick="sum( +document.getElementById('first_number').value, +document.getElementById('second_number').value )">+</button>
+	<button onclick="sub( +document.getElementById('first_number').value, +document.getElementById('second_number').value )">-</button>
+	<button onclick="multi( +document.getElementById('first_number').value, +document.getElementById('second_number').value )">*</button>
+	<button onclick="divi( +document.getElementById('first_number').value, +document.getElementById('second_number').value )">/</button>
+	<script>
+		function sum ( a, b ) {
+			console.log( a + b );
+		}
+		function sub ( a, b ) {
+			console.log( a - b );
+		}
+		function multi ( a, b ) {
+			console.log( a * b );
+		}
+		function divi ( a, b ) {
+			console.log( a / b );
+		}
+	</script>
+</body>
+</html>

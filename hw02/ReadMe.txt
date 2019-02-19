@@ -1,4 +1,6 @@
 https://codepen.io/khizri-tataev/pen/MLLjeP	
+https://codepen.io/khizri-tataev/pen/rPPbMQ
+остальные потом, не успел внести в codepen.io до 15:00
 
 Оформление JS Style
 https://learn.javascript.ru/coding-style

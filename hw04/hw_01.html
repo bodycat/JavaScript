@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript hw04_01</title>
+</head>
+<body>
+    <h2>Функция преобразования числа в объект</h2> 
+    <pre>
+        Написать функцию, преобразующую число в объект. Передавая на вход число от 0 до 999, мы должны получить на выходе объект, в котором в соответствующих свойствах описаны единицы, десятки и сотни. Например, для числа 245 мы должны получить следующий объект: {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}. Если число превышает 999, необходимо выдать соответствующее сообщение с помощью console.log и вернуть пустой объект.
+    </pre>
+    <script>
+
+function numtoObj(num) {
+  var titles = ['units', 'dozens', 'hundreds'];
+
+  if(num < 0) {
+    alert('Отрицательные числа не поддерживаются');
+    return; 
+  }
+
+  num = num + '';
+
+  if(num.length > titles.length) {
+    alert('Число слишком большое. Поддерживаются только числа с ' + titles.length + ' знаками');
+    return;
+  }
+  
+  var obj = {};
+  for(var i = num.length - 1; i>=0; i++) {
+    var key = name.length - 1 - i;
+    // для конвертации
+    obj[key] = num[i];
+  }
+}
+
+numToObj(234);
+
+// numToObj();
+
+//     // Обьявляем функцию 
+//     function numToObj() {
+//       // Просим ввести число
+//       var taskNum = parseInt( prompt( 'Введите число от 0 до 999' ) );
+//       // Проверяем условие соответствия диапазону
+//       if ( taskNum > 999 || taskNum < 0 ) {
+//         // Если нет соответсвия выводим сообщение
+//         alert('Проверьте диапазон');
+//         return null;
+//       }
+// //Всего 
+//       // Единиц
+//       var units = taskNum % 10;
+//       // Десятков:
+//       var tens = ( ( taskNum - units ) % 100 ) / 10;
+//       // Сотен:
+//       var hundreds = ( taskNum - tens * 10 - units ) / 100;
+//       // Результат
+//       alert( 'единиц: ' + units + ', десятков: ' + tens + ', сотен: ' + hundreds );
+//       // console.log( 'единицы: ' + units + ', десятки: ' + tens + ', сотни: ' + hundreds );
+//     }
+    </script>
+<!--   https://codepen.io/khizri-tataev/pen/ywyYXv -->
+</body>
+</html>

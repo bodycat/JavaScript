@@ -1,6 +1,29 @@
-{
-name: 'string',
-colour: 'string'
-descr: 'string'
-price: 'number',
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript hw04_03</title>
+</head>
+<body>
+    <h2></h2> 
+    <pre>
+
+    </pre>
+    <script>
+ 
+     var eshop = {
+		name: 'string',
+		colour: 'string',
+		descr: 'string',
+		price: 'number',
+    }
+
+    for (var key in eshop) {
+      // этот код будет вызван для каждого свойства объекта
+      // ..и выведет имя свойства и его значение
+      alert( "Характеристика номер: " + key  + " имеет тип: " + eshop[key]);
+    }
+
+    </script>
+</body>
+</html>

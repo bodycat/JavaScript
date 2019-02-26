@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript hw03_01</title>
+</head>
+<body>
+    <h2>Вывести все простые числа</h2>
+    <pre>
+        Не включая числа: 
+            0 - вообще не число, а обозначение пустоты, деление 0/0 = infinity;
+            1 - исключение, комплексное число;
+        Считаем, что простые числа начинаются с числа 2. Число должно делиться само на само себя и на 1.
+    </pre>
+    <script>
+    function isPrime(num){
+        if(num < 0 || num === 1) {
+            return false;
+        }
+        if(num === 0){
+            return true;
+        }
+        var i = 2;
+        // так как исключения мы уже указали, а простые начинаются с 2
+        while (i < num) {
+            if(num % i === 0) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+    var isPrimeVal = parseInt(prompt("Введите проверяемое число:"));
+    // alert(isPrime(isPrimeVal));
+    var i = 0;
+    while(i <= isPrimeVal) {
+        if(isPrime(i)) {
+            // console.log(i);
+          alert(i);
+        }
+        i++;
+    }
+    </script>
+<!-- https://codepen.io/khizri-tataev/pen/QYXKEj?editors=1111 -->
+</body>
+</html>

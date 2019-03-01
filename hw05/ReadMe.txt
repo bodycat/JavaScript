@@ -1,6 +1,6 @@
 Первый вариант без разметки
 https://codepen.io/khizri-tataev/pen/JzGOYJ
-С разметкой, но ещё без фигур
+С разметкой и фигурами
 https://codepen.io/khizri-tataev/pen/eXJLyK
 
 

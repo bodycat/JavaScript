@@ -1,9 +1,10 @@
-Homework05_01
+Первый вариант без разметки
 https://codepen.io/khizri-tataev/pen/JzGOYJ
-
-DOM без CSS и вставленных фигур, развитие логики из примера на занятии
+С разметкой, но ещё без фигур
 https://codepen.io/khizri-tataev/pen/eXJLyK
 
+
+Доп материалы.
 HTML_Colors
 http://vvz.nw.ru/Lessons/HTML_Colors/HTMLcolors_HSB.htm
 

@@ -1,42 +1,27 @@
-var table = document.createElement("table");
+function chess() {
+    for (var i = 1; i < 11; i++) {
 
-for (var i = 1; i < 11; i++) {
+        var tr = document.createElement("tr");
 
-    var tr = document.createElement("tr");
-
-    for (var j = 1; j < 11; j++){
-        var td = document.createElement("td");
-        if (i==1 || j==1) {
-            td.className = "transparent"
+        for (var j = 1; j < 11; j++){
+            var td = document.createElement("td");
+            if (i==1 || j==1) {
+                td.className = "transparent";
+            }
+            else if (i==10 || j==10) {
+                td.className = "transparent"
+            }        
+            else if (i%2 == j%2) {
+                td.className = "whitesmoke";            
+            } else {
+                td.className = "peru";
+              }
+            tr.appendChild(td);
         }
-        else if (i==10 || j==10) {
-            td.className = "transparent"
-        }        
-        else if (i%2 == j%2) {
-            td.className = "whitesmoke";            
-        } else {
-            td.className = "peru";
-          }
-        tr.appendChild(td);
+
+        table.appendChild(tr);
     }
 
-    table.appendChild(tr);
+    document.body.appendChild(table);
 }
-
-document.body.appendChild(table);
-
-// var table = document.createElement("table");
-// for (var i = 1; i < 9; i++) {
-//     var tr = document.createElement('tr');
-//     for (var j = 1; j < 9; j++) {
-//         var td = document.createElement('td');
-//         if (i%2 == j%2) {
-//             td.className = "white";
-//         } else {
-//             td.className = "gray";
-//         }
-//         tr.appendChild(td);
-//     }
-//     table.appendChild(tr);
-// }
-// document.body.appendChild(table);
+chess();

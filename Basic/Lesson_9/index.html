@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>GeekBrains_JS_lesson_9</title>
+	</head>
+	<body>
+		<script>			      
+var count=0;			
+var rep=1;
+while (rep==1)  
+	{	
+alert("Перед Вами возник Сфинкс, всё что Вам пришло в голову - кидать ему камнями в голову.");
+alert("Пока Сфинкс набирает воздух для атаки у тебя есть две попытки швырнуть в него камнем из крептонита");
+	var sum1 = 0;
+	do {
+		var fbr1= Math.round((Math.random()));
+		var fbr2=fbr1+20;		
+		if ((fbr1 >= 0) && (fbr1 <=45)) {break}
+		} while (true) 			
+
+	do {
+		var sbr1=Math.round((Math.random()*70));
+		var sbr2=sbr1+20;		
+		if ((sbr1 >= 50) && (sbr1 <=70)) {break}
+		} while (true) 
+	alert("Вы заметили, что Сфинкс задерживает голову в коридоре от " + fbr1 + " градусов, до " + fbr2 + " градусов");
+	alert("Другой коридор от " + sbr1 + " градусов, до " + sbr2 + " градусов.");	
+
+		var firstBullet = prompt("Введите угол атаки для первого снаряда:");
+		if (isNaN(firstBullet)) {alert("Введите число")} 
+		else if 	
+			( ( ((firstBullet>fbr1) && (firstBullet<fbr2)) || ((firstBullet>sbr1) && (firstBullet<sbr2)) ) ) {alert("Вы попали в Сфинкса!"); ++sum1} 
+		
+		else {alert("Вы промазали")};
+		var secondBullet = prompt("Введите угол атаки для второго снаряда:");
+		if (isNaN(secondBullet)) {alert("Введите число")} 
+		else if 
+			( ( ((secondBullet>fbr1) && (secondBullet<fbr2)) || ((secondBullet>sbr1)&&(secondBullet<sbr2)) ) )  {alert("Вы попали в Сфинкса!"); ++sum1} 
+		else {alert("Вы стали шашлыком для 'кота' ")};
+		if (sum1<1) {alert("Вы оказались на редкость вкусным"); rep=0} 
+		else if (sum1==1) {alert("Сфинкс сделал из Ваших косточек серьги, в знак особого уважения"); rep=0}
+		else {alert("Сфинкс извинился за неудобства и пропустил Вас в сокровищницу. Вы живы и богаты.")}
+	rep = prompt("Вы хотите продолжить ? 1 - да, любая другая цифра - нет")			
+	if (isNaN(rep)) {alert("Вводите число")}
+	else if (rep != 1) {break} 
+	else {count++;	alert("Было " + count + " попыток")}	
+	}
+	// var sum=0;
+	// do {
+	// 	if ((Math.random()*2)<1)
+	// 		{
+	// 			alert("Финита ля комедия");
+	// 			break;
+	// 		}   
+	// 	++sum;
+	// 	} while (true)
+	// alert("Раундов было сыграно " +sum);
+		</script>
+	</body>
+</html>

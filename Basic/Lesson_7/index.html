@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>GeekBrains_JS_lesson_6</title>
+	</head>
+	<body>
+		<script>			
+alert("Перед Вами возник Сфинкс, он отпустит Вас если Вы ответите на 3 загадки");
+	var sum = 0;		
+		var q1 = prompt("Висит груша, нельзя скушать");
+      	if (q1.toLowerCase() == "лампочка") {alert("Правильно!"); sum ++;} else {alert("Ошибаться не надо!")}
+		// Лампочка
+		var q2 = prompt("Фамилия Льва Николаевича Толстого");
+      	if (q2.toLowerCase() == "толстой") {alert("Правильно!"); sum ++;} else {alert("Ошибаться не надо!")}
+		// Толстой
+		var q3 = prompt("Не лает, не кусается, а так же называется.");
+      	if (q3.toLowerCase() == "собака"||q3=="@") {alert("Правильно!"); sum ++;} else {alert("Ошибаться не надо!")}
+		// Собака @		
+			{alert("Вы угадали " + sum + " раз.")}		
+		if (sum<3) 
+			{alert("Вы стали заложником Сфинкса.")} else {alert("Сфинкс зашипел и отпустил Вас.")}
+		</script>
+	</body>
+</html>

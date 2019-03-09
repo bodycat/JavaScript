@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>GeekBrains_JS_lesson_10</title>
+	</head>
+	<body>
+		<script>
+		var S = parseFloat(prompt("Сумма вклада: '0-infinity'"));
+		var I = parseInt(prompt("Процентная ставка: '2-12'"));
+			I = parseFloat((I/100).toFixed(2)); // переводим заранее, чтобы не считать в цикле
+		var SI = 0; //считаем S*I			
+		alert("Процентная ставка: " + I);
+		var Y = parseInt(prompt("Количество лет: '1-infinity'"));
+
+		if ( isNaN(S) || isNaN(I) || isNaN(Y))
+			{
+				alert ("Нужно вводить числа, чтобы начать заново нажмите f5");
+			} 
+			else {
+				for (var T = 1; T <= Y; ++T) 
+					{
+						S = parseFloat((S + (S*I)).toFixed(2));
+						alert("За " + T + " год вы имеете на счету: " + S + " у.е.");
+					}
+					alert("Конечная сумма на счету составит: " + S + " у.е.");
+				}	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>GeekBrains_JS_lesson_8</title>
+	</head>
+	<body>
+		<script>			      
+alert("Перед Вами возник Сфинкс, всё что Вам пришло в голову - кидать ему камнями в голову.");
+alert("Пока Сфинкс набирает воздух для атаки у тебя есть две попытки швырнуть в него камнем из крептонита");
+	var sum = 0;		
+		var firstBullet = prompt("Введите угол атаки для первого снаряда:");
+		if (isNaN(firstBullet)) {alert("Введите число")} 
+		else if 	
+			( ( ((firstBullet>20) && (firstBullet<30)) || ((firstBullet>75) && (firstBullet<85)) ) ) {alert("Вы попали в Сфинкса!"); ++sum} 
+		
+		else {alert("Вы промазали")};
+		var secondBullet = prompt("Введите угол атаки для второго снаряда:");
+		if (isNaN(secondBullet)) {alert("Введите число")} 
+		else if 
+			( ( ((secondBullet>20) && (secondBullet<30)) || ((secondBullet>75)&&(secondBullet<85)) ) )  {alert("Вы попали в Сфинкса!"); ++sum} 
+		else {alert("Вы стали шашлыком для 'кота' ")};
+		if (sum<1) {alert("Вы оказались на редкость вкусным")} 
+		else if (sum==1) {alert("Сфинкс сделал из Ваших косточек серьги, в знак особого уважения")}
+		else {alert("Сфинкс извинился за неудобства и пропустил Вас в сокровищницу. Вы живы и богаты.")}
+
+		// var thirdBullet = prompt("Введите угол атаки третьего снаряда:");
+		// var fourthBullet = prompt("Введите угол атаки четвертого снаряда:");
+		// var fifthBullet = prompt("Введите угол атаки пятого снаряда:");		
+		// var sixthBullet = prompt("Введите угол атаки шестого снаряда:");				
+		// var seventhBullet = prompt("Введите угол атаки седьмого снаряда:");						
+		// var eighthBullet = prompt("Введите угол атаки восьмого снаряда:");							
+		// var ninthBullet = prompt("Введите угол атаки девятого снаряда:");
+		// var tenthBullet = prompt("Введите угол атаки десятого снаряда:");
+		</script>
+	</body>
+</html>
